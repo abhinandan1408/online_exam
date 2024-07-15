@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Exam</title>
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <link rel="icon" href="../assets/Exam-PNG-File.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- <img src="admin_bg.jpg" loading="lazy" alt="" class="admin-img" /> -->
+
+      <h1 class="heading">Online Exam</h1>
+      <nav class="navbar">
+        <p class="nav-tags">Home</p>
+        <p class="nav-tags">About Us</p>
+      </nav>
+
+      <div class="admin-login">
+        <h2 class="login-heading">Admin Login</h2>
+        <table class="table">
+          <tr>
+            <td>Admin Id</td>
+            <td><input type="text" id="adminId" /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" id="adminPassword" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button onclick="login()">Login</button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer">
+        <a href="../views/student.html" class="student-link">Student</a>
+        <div class="footer-msg">
+          <br />
+          <p>
+            Copyright &copy; 2024 | Designed & Developed by Abhinandan Mukherjee
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/admin.js"></script>
+  </body>
+</html>
