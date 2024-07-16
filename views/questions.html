@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions</title>
+    <link rel="stylesheet" href="../styles/viewques.css" />
+    <link rel="icon" href="../assets/Exam-PNG-File.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- <img src="admin_bg.jpg" loading="lazy" alt="" class="admin-img" /> -->
+
+      <h1 class="heading">
+        <a href="../views/home.html" style="color: black">Online Exam</a>
+      </h1>
+      <nav class="navbar">
+        <a href="../views/home.html" class="nav-tags">Home</a>
+        <a href="../views/addsub.html" class="nav-tags">Add Sub</a>
+        <a href="../views/addques.html" class="nav-tags">Add Ques</a>
+        <a href="../views/viewques.html" class="nav-tags">View Ques</a>
+        <a href="../views/addstudent.html" class="nav-tags">Add Studs</a>
+        <a href="../views/exam.html" class="nav-tags">Exam Settings</a>
+        <a href="../views/home.html" class="nav-tags">Logout</a>
+        <a href="../views/home.html" class="nav-tags">About Us</a>
+      </nav>
+
+      <div class="admin-login sub">
+        <h1 class="login-heading">Choose Subject</h1>
+        <div class="add-sub">
+          <table class="table sub-table" ;>
+            <tr>
+              <td class="sub-name">Subject Name</td>
+              <td>
+                <select id="lang" class="lang">
+                  <option value="Python">Python</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="Angular JS">Angular JS</option>
+                  <option value="MERN">MERN</option>
+                  <option value="MEAN">MEAN</option>
+                  <option value="React">React</option>
+                  <option value="dsa">dsa</option>
+                  <option value="php">php</option>
+                  <option value="java">java</option>
+                  <option value="PHP">PHP</option>
+                  <option value="mongodbms">mongodbms</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button>Search</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="ques-div">
+        <table border="1px" class="ques-table">
+          <tr>
+            <th>Question Id</th>
+            <th>Question</th>
+            <th>Option 1</th>
+            <th>Option 2</th>
+            <th>Option 3</th>
+            <th>Option 4</th>
+            <th>Answer</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Who developed the Python Language?</td>
+            <td>Zim Den</td>
+            <td>Guido van Rossum</td>
+            <td>Niene Stom</td>
+            <td>Wick Van Rossum</td>
+            <td>Option 2</td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Who developed the javaScript Language?</td>
+            <td>Zim Den</td>
+            <td>Brendan Eich</td>
+            <td>Niene Stom</td>
+            <td>Wick Van Rossum</td>
+            <td>Option 2</td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footer">
+        <a href="../views/admin.html" class="student-link">Logout</a>
+        <div class="footer-msg">
+          <br />
+          <p>
+            Copyright &copy; 2024 | Designed & Developed by Abhinandan Mukherjee
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

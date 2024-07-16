@@ -68,6 +68,7 @@ body {
   padding: 10px;
   margin-top: 30px;
   font-size: larger;
+  
   /* text-align: center; */
 }
 
@@ -110,10 +111,36 @@ body {
   font-size: 25px;
 }
 
-.home{
+.home {
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 50px;
 }
+
+.sub {
+  width: 70%;
+  height: 1000px;
+  margin-top: 30px;
+  /* display: flex;
+    justify-content: center;
+    align-items: center;   */
+}
+
+.sub-table {
+  display: inline;
+  /* padding-top: 500px; */
+  font-size: 20px;
+  margin-left: 250px;
+  margin-top: 200px;
+}
+
+.sub-table td {
+  padding: 10px;
+}
+
+.sub-name{
+  margin-top: 200px;
+}
+

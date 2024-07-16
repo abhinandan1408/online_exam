@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url(../assets/admin_bg.jpg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .heading {
+    color: black;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    background-color: rgb(234, 100, 122);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    height: 35px;
+  }
+  
+  .nav-tags {
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .nav-tags:hover {
+    color: white;
+  }
+  
+  .admin-login {
+    /* background-color: #fff; */
+    width: 30%;
+    width: 100%;
+    /* height: 300px; */
+    margin: 50px auto;
+    /* border: 1px solid rgb(223, 14, 49);
+      border-radius: 10px; */
+  
+    backdrop-filter: blur(20px) saturate(190%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.427);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  
+  .login-heading {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 50px;
+  }
+  
+  .table {
+    padding: 30px 50px;
+    margin-top: 200px;
+  }
+  .table td {
+    padding: 10px;
+    font-size: larger;
+    
+    /* text-align: center; */
+  }
+  
+  .table td input {
+    width: 100%;
+    height: 30px;
+    /* margin-left: 25px; */
+  }
+  
+  .table td button {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(234, 100, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: -80px;
+    margin-top: 10px;
+  }
+  .footer {
+    height: 60px;
+    backdrop-filter: blur(20px) saturate(190%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.427);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  .footer-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+  }
+  .student-link {
+    margin-left: 650px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .home {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+  }
+  
+  .sub {
+    width: 70%;
+    height: auto;
+    /* display: flex;
+      justify-content: center;
+      align-items: center;   */
+  }
+  
+  .sub-table {
+    display: inline;
+    /* padding-top: 500px; */
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+  
+  .sub-table td {
+    padding: 10px;
+  }
+  
+  .sub-name{
+    margin-top: 200px;
+  }
+  
+  .add-sub {
+    margin-top: 50px; 
+    display: inline;
+  }
+  
+  .sub-table td button {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(234, 100, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+    margin-top: 10px;
+  }
+
+  .add-sub-table {
+    margin-top: 50px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }
+
+  .add-sub-table tr{
+    margin-top: 200px;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

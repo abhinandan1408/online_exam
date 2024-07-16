@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="../styles/admin.css" />
+    <title>View Questions</title>
+    <link rel="stylesheet" href="../styles/viewques.css" />
     <link rel="icon" href="../assets/Exam-PNG-File.png" type="image/x-icon" />
   </head>
   <body>
@@ -25,8 +25,34 @@
         <a href="../views/home.html" class="nav-tags">About Us</a>
       </nav>
 
-      <div class="admin-login home">
-        <h1>Welcome Admin</h1>
+      <div class="admin-login sub">
+        <h1 class="login-heading">Choose Subject</h1>
+        <div class="add-sub">
+          <table class="table sub-table" ;>
+            <tr>
+              <td class="sub-name">Subject Name</td>
+              <td>
+                <select id="lang" class="lang">
+                  <option value="Python">Python</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="Angular JS">Angular JS</option>
+                  <option value="MERN">MERN</option>
+                  <option value="MEAN">MEAN</option>
+                  <option value="React">React</option>
+                  <option value="dsa">dsa</option>
+                  <option value="php">php</option>
+                  <option value="java">java</option>
+                  <option value="PHP">PHP</option>
+                  <option value="mongodbms">mongodbms</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button>Search</button></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="footer">
         <a href="../views/admin.html" class="student-link">Logout</a>
