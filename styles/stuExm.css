@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/admin_bg.jpg);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  color: black;
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  background-color: rgb(234, 100, 122);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 50px;
+  height: 35px;
+}
+
+.nav-tags {
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-tags:hover {
+  color: white;
+}
+
+.admin-login {
+  width: 80%;
+
+  padding: 30px 0;
+  margin: 50px auto;
+  backdrop-filter: blur(20px) saturate(190%);
+  background-color: rgba(255, 255, 255, 0.427);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.admin-login h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.login-heading {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+
+.footer {
+  height: 60px;
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.427);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.footer-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 5px;
+}
+.student-link {
+  margin-left: 650px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.exm-que {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+.exm-que h2 {
+  text-align: left;
+}
+.exm-que p {
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+.exm-que button {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  background-color: rgb(234, 100, 122);
+  color: white;
+  cursor: pointer;
+}
+
+#demo {
+  text-align: right;
+  padding-right: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}

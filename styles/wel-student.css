@@ -10,6 +10,7 @@
     background-size: cover;
   }
   
+  
   .heading {
     color: black;
     font-size: 50px;
@@ -40,14 +41,10 @@
   }
   
   .admin-login {
-    /* background-color: #fff; */
-    width: 30%;
-    width: 100%;
-    /* height: 300px; */
+    width: 50%;
+    height: 400px;
     margin: 50px auto;
-    /* border: 1px solid rgb(223, 14, 49);
-      border-radius: 10px; */
-  
+    text-align: center;
     backdrop-filter: blur(20px) saturate(190%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.427);
@@ -55,41 +52,46 @@
     border: 1px solid rgba(209, 213, 219, 0.3);
   }
   
+  .admin-login h2 {
+    text-decoration: underline;
+    font-size: 40px;
+  }
+  
+ 
+  
   .login-heading {
     text-align: center;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: underline;
-    margin-top: 50px;
   }
+
+
+   .table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
-  .table {
-    padding: 30px 50px;
-    margin-top: 200px;
-  }
-  .table td {
-    padding: 10px;
+   }
+
+   .table td{
     font-size: larger;
-    
-    /* text-align: center; */
-  }
-  
-  .table td input {
-    width: 100%;
-    height: 30px;
-    /* margin-left: 25px; */
-  }
-  
-  .table td button {
-    width: 100%;
+    font-weight: 700;
+    padding: 10px;
+   }
+
+   .table td button {
+    width: 100px;
     height: 30px;
     background-color: rgb(234, 100, 122);
     color: white;
     border: none;
     cursor: pointer;
-    margin-left: -80px;
     margin-top: 10px;
   }
+
+  
+
   .footer {
     height: 60px;
     backdrop-filter: blur(20px) saturate(190%);
@@ -113,78 +115,3 @@
     font-size: 25px;
   }
   
-  .home {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-  }
-  
-  .sub {
-    width: 70%;
-    height: auto;
-    /* display: flex;
-      justify-content: center;
-      align-items: center;   */
-  }
-  
-  .sub-table {
-    display: inline;
-    /* padding-top: 500px; */
-    font-size: 20px;
-    margin-left: 250px;
-    margin-top: 200px;
-  }
-  
-  .sub-table td {
-    padding: 10px;
-  }
-  
-  .sub-name{
-    margin-top: 200px;
-  }
-  
-  .add-sub {
-    margin-top: 50px; 
-    display: inline;
-  }
-  
-  .sub-table td button {
-    width: 100%;
-    height: 30px;
-    background-color: rgb(234, 100, 122);
-    color: white;
-    border: none;
-    cursor: pointer;
-    
-    margin-top: 10px;
-  }
-
-  .add-sub-table {
-    margin-left:90px;
-    margin-top: 100px;
-    padding: 30px 50px;
-    border-radius: 10px;
-    border: 1px solid rgb(223, 14, 49);
-    width: 80%;
-    margin-bottom: 50px;
-    text-align: center;
-    background-color: #fff;
-    
-  }
-  .add-sub-table th{
-    padding: 5px;
-  }
-  .add-sub-table td a{
-    text-decoration: none;
-    color: red;
-  }
-
-
-
-  .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }

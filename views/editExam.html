@@ -91,20 +91,25 @@
 
           <tr>
             <td></td>
-            <td><button onclick="add()">Add Exam</button></td>
+            <td><button onclick="update()">Update Exam</button></td>
           </tr>
         </table>
       </div>
-      <table border="1px" class="ques-table">
+      <table border="1px" class="ques-table" id="examTableBody">
         <thead>
           <th>Exam Id</th>
           <th>Exam Date</th>
           <th>Subject</th>
           <th>Duration</th>
           <th>No. of Questions</th>
-          <th colspan="2">Action</th>
         </thead>
-        <tbody id="examTableBody"></tbody>
+        <tbody>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tbody>
       </table>
       <div class="footer">
         <a href="../views/admin.html" class="student-link">Logout</a>

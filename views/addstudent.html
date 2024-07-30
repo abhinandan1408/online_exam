@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Student</title>
     <link rel="stylesheet" href="../styles/addstudent.css" />
     <link rel="icon" href="../assets/Exam-PNG-File.png" type="image/x-icon" />
   </head>
-  <body>
+  <body onload="display()">
     <div class="main-container">
       <!-- <img src="admin_bg.jpg" loading="lazy" alt="" class="admin-img" /> -->
-
+      <h1>
+        <a
+          href="../views/home.html"
+          style="
+            color: black;
+            text-decoration: none;
+            margin-top: 10px;
+            position: absolute;
+          "
+        >
+          <i class="fa-brands fa-studiovinari" style="color: white"></i>
+          DevTestHub</a
+        >
+      </h1>
       <h1 class="heading">
         <a href="../views/home.html" style="color: black">Online Exam</a>
       </h1>
@@ -18,11 +38,11 @@
         <a href="../views/home.html" class="nav-tags">Home</a>
         <a href="../views/addsub.html" class="nav-tags">Add Sub</a>
         <a href="../views/addques.html" class="nav-tags">Add Ques</a>
-        <a href="../views/viewques.html" class="nav-tags">View Ques</a>
+        <a href="../views/questions.html" class="nav-tags">View Ques</a>
         <a href="../views/addstudent.html" class="nav-tags">Add Studs</a>
         <a href="../views/exam.html" class="nav-tags">Exam Settings</a>
         <a href="../views/home.html" class="nav-tags">Logout</a>
-        <a href="../views/home.html" class="nav-tags">About Us</a>
+        <a href="../views/aboutUS.html" class="nav-tags">About Us</a>
       </nav>
 
       <div class="admin-login sub">
@@ -43,78 +63,24 @@
             </tr>
             <tr>
               <td></td>
-              <td><button>Add</button></td>
+              <td><button onclick="add()">Add</button></td>
             </tr>
           </table>
         </div>
-        <table class="table add-sub-table">
+        <table class="table add-sub-table" border="1px">
           <thead>
             <tr>
               <th scope="col">Roll No.</th>
               <th scope="col">Student Name</th>
               <th scope="col">Collage</th>
-              <th scope="col">Action</th>
+              <th scope="col" colspan="2">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="studentTable">
             <tr>
               <th scope="row">1001</th>
               <td>Debjit</td>
               <td>BIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1002</th>
-              <td>Rahul</td>
-              <td>GNIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1003</th>
-              <td>Rohit</td>
-              <td>George</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1004</th>
-              <td>Mohan</td>
-              <td>MIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1005</th>
-              <td>Sohan</td>
-              <td>IIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1006</th>
-              <td>Ramesh</td>
-              <td>NIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1007</th>
-              <td>Disha</td>
-              <td>NIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1008</th>
-              <td>Rajesh</td>
-              <td>Techno</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1009</th>
-              <td>Suresh</td>
-              <td>BMIT</td>
-              <td><a href="#">Delete</a></td>
-            </tr>
-            <tr>
-              <th scope="row">1010</th>
-              <td>Debaroon</td>
-              <td>IIT</td>
               <td><a href="#">Delete</a></td>
             </tr>
           </tbody>
@@ -130,5 +96,6 @@
         </div>
       </div>
     </div>
+    <script src="../scripts/addStudent.js"></script>
   </body>
 </html>

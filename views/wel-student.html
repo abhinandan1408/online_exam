@@ -10,13 +10,12 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Login</title>
-    <link rel="stylesheet" href="../styles/admin.css" />
+    <title>Online Exam</title>
+    <link rel="stylesheet" href="../styles/wel-student.css" />
     <link rel="icon" href="../assets/Exam-PNG-File.png" type="image/x-icon" />
   </head>
   <body>
     <div class="main-container">
-      <!-- <img src="admin_bg.jpg" loading="lazy" alt="" class="admin-img" /> -->
       <h1>
         <a
           href="../views/home.html"
@@ -35,29 +34,38 @@
         <a href="../views/home.html" style="color: black">Online Exam</a>
       </h1>
       <nav class="navbar">
-        <p class="nav-tags">Home</p>
         <p class="nav-tags">About Us</p>
       </nav>
 
+      <h2 class="login-heading">Welcome Student</h2>
+
       <div class="admin-login">
-        <h2 class="login-heading">Student Login</h2>
-        <table class="table">
-          <tr>
-            <td>Roll No</td>
-            <td><input type="text" id="studentId" /></td>
-          </tr>
-          <tr>
-            <td>Password</td>
-            <td><input type="password" id="studentPassword" /></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><button onclick="login()">Login</button></td>
-          </tr>
-        </table>
+        <h2 class="login-heading">Instructions</h2>
+        <div class="tablebox">
+          <table class="table">
+            <tr>
+              <td>1. All Questions are Mandatory</td>
+            </tr>
+            <tr>
+              <td>2. Each Question carries 1 mark</td>
+            </tr>
+            <tr>
+              <td>3. Total Exam Time is 15 minutes</td>
+            </tr>
+            <tr>
+              <td>4. Each Question Carries 1 Mark</td>
+            </tr>
+            <tr>
+              <td>5. There is no negative marking</td>
+            </tr>
+            <tr>
+              <td><button onclick="start()">Start Exam</button></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="footer">
-        <a href="../views/admin.html" class="student-link">Admin</a>
+        <a href="../views/student.html" class="student-link">Student</a>
         <div class="footer-msg">
           <br />
           <p>
@@ -67,6 +75,6 @@
       </div>
     </div>
 
-    <script src="../scripts/student.js"></script>
+    <script src="../scripts/stuExm.js"></script>
   </body>
 </html>

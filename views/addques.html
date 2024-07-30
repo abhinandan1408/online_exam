@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Questions</title>
@@ -10,17 +16,29 @@
   <body>
     <div class="main-container">
       <!-- <img src="admin_bg.jpg" loading="lazy" alt="" class="admin-img" /> -->
-
+      <h1>
+        <a
+          href="../views/home.html"
+          style="
+            color: black;
+            text-decoration: none;
+            margin-top: 10px;
+            position: absolute;
+          "
+        >
+          <i class="fa-brands fa-studiovinari" style="color: white;"></i> DevTestHub</a
+        >
+      </h1>
       <h1 class="heading"><a href="../views/home.html" style="color: black;">Online Exam</a></h1>
       <nav class="navbar">
         <a href="../views/home.html" class="nav-tags">Home</a>
           <a href="../views/addsub.html" class="nav-tags">Add Sub</a>
           <a href="../views/addques.html" class="nav-tags">Add Ques</a>
-          <a href="../views/viewques.html" class="nav-tags">View Ques</a>
+         <a href="../views/questions.html" class="nav-tags">View Ques</a>
           <a href="../views/addstudent.html" class="nav-tags">Add Studs</a>
           <a href="../views/exam.html" class="nav-tags">Exam Settings</a>
           <a href="../views/home.html" class="nav-tags">Logout</a>
-          <a href="../views/home.html" class="nav-tags">About Us</a>
+           <a href="../views/aboutUS.html" class="nav-tags">About Us</a>
       </nav>
 
       <div class="admin-login">
@@ -29,7 +47,7 @@
           <tr>
             <td class="sub-name">Subject Name</td>
             <td>
-              <select id="lang" class="lang">
+              <select id="subjectName" class="lang">
                 <option value="Python">Python</option>
                 <option value="JavaScript">JavaScript</option>
                 <option value="Angular JS">Angular JS</option>
@@ -46,27 +64,27 @@
           </tr>
           <tr>
             <td>Question</td>
-            <td><input type="text" id="ques" class="ques-input"/></td>
+            <td><input type="text" id="question" class="ques-input"/></td>
           </tr>
           <tr>
             <td>Option 1</td>
-            <td><input type="text" id="option" class="option-input"/></td>
+            <td><input type="text" id="option1" class="option-input"/></td>
           </tr>
           <tr>
             <td>Option 2</td>
-            <td><input type="text" id="option" class="option-input"/></td>
+            <td><input type="text" id="option2" class="option-input"/></td>
           </tr>
           <tr>
             <td>Option 3</td>
-            <td><input type="text" id="option" class="option-input"/></td>
+            <td><input type="text" id="option3" class="option-input"/></td>
           </tr>
           <tr>
             <td>Option 4</td>
-            <td><input type="text" id="option" class="option-input"/></td>
+            <td><input type="text" id="option4" class="option-input"/></td>
           </tr>
           <tr>
             <td>Answer</td>
-            <td><select id="Answer" class="lang">
+            <td><select id="answer" class="lang">
                 <option value="Option 1">Option 1</option>
                 <option value="Option 2">Option 2</option>
                 <option value="Option 3">Option 3</option>
@@ -76,7 +94,7 @@
 
           <tr>
             <td></td>
-            <td><button onclick="login()">Add Question</button></td>
+            <td><button onclick="add()">Add Question</button></td>
           </tr>
         </table>
       </div>
@@ -90,5 +108,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../scripts/addQues.js"></script>
   </body>
 </html>

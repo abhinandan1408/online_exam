@@ -10,8 +10,8 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Login</title>
-    <link rel="stylesheet" href="../styles/admin.css" />
+    <title>Student Exam</title>
+    <link rel="stylesheet" href="../styles/stuExm.css" />
     <link rel="icon" href="../assets/Exam-PNG-File.png" type="image/x-icon" />
   </head>
   <body>
@@ -35,29 +35,39 @@
         <a href="../views/home.html" style="color: black">Online Exam</a>
       </h1>
       <nav class="navbar">
-        <p class="nav-tags">Home</p>
-        <p class="nav-tags">About Us</p>
+        <a href="../views/home.html" class="nav-tags">Home</a>
+        <a href="../views/aboutUS.html" class="nav-tags">About Us</a>
       </nav>
 
-      <div class="admin-login">
-        <h2 class="login-heading">Student Login</h2>
-        <table class="table">
-          <tr>
-            <td>Roll No</td>
-            <td><input type="text" id="studentId" /></td>
-          </tr>
-          <tr>
-            <td>Password</td>
-            <td><input type="password" id="studentPassword" /></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><button onclick="login()">Login</button></td>
-          </tr>
-        </table>
+      <div class="admin-login home">
+        <h1>Welcome Student</h1>
+        <p id="demo"></p>
+        <div class="exm-que">
+          <h2>
+            1.When an operator's value is null, the typeof returned by the unary
+            operator is _______ .
+          </h2>
+          <p>
+            a.<input type="radio" name="option" value="Boolean" />
+            <label for="Boolean">Boolean</label>
+          </p>
+          <p>
+            b.<input type="radio" name="option" value="Undifined" />
+            <label for="Undifined">Undifined</label>
+          </p>
+          <p>
+            c.<input type="radio" name="option" value="Object" />
+            <label for="Object">Object</label>
+          </p>
+          <p>
+            d.<input type="radio" name="option" value="Array" />
+            <label for="Array">Array</label>
+          </p>
+          <button onclick="submit()">Submit Exam</button>
+        </div>
       </div>
       <div class="footer">
-        <a href="../views/admin.html" class="student-link">Admin</a>
+        <a href="../views/admin.html" class="student-link">Logout</a>
         <div class="footer-msg">
           <br />
           <p>
@@ -66,7 +76,6 @@
         </div>
       </div>
     </div>
-
-    <script src="../scripts/student.js"></script>
+    <script src="../scripts/stuExm.js"></script>
   </body>
 </html>
